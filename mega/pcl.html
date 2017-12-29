@@ -10,8 +10,27 @@
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web|Electrolize">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Julius+Sans+One">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
 
 	<title>Pune Coding League 2018</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#firstPrize").click(function(){
+				$("#firstPrize").fadeOut(function(){
+					$("#firstPrize").text(($("#firstPrize").text() == '6000₹'?'First Prize':'6000₹')).fadeIn();
+				});
+			});
+
+			$("#secondPrize").click(function(){
+				$("#secondPrize").fadeOut(function(){
+					$("#secondPrize").text(($("#secondPrize").text() == '4000₹'?'Second Prize':'4000₹')).fadeIn();
+				});
+			});
+		});
+	</script>
 </head>
 
 <style>
@@ -25,6 +44,16 @@
 
 	.w3-heading{
 		font-family: 'Electrolize',sans-serif;
+	}
+
+	.prizeBlock{
+		margin-top: 40px;
+		font-size: 30px;
+		border: 1px green solid;
+		width:50%;
+		height:20%;
+		background-color: white;
+		color: black;
 	}
 </style>
 
@@ -74,10 +103,16 @@
 		</div>
 			
 		<div class="w3-third w3-center w3-large w3-cyan w3-text-white w3-TW" style="height:250px">
-			<h2><b>Follow Us!</b></h2>
-			<a href = "https://www.facebook.com/pccoe.acm/" target="_blank"><i class="w3-xxlarge fa fa-facebook-official"></i></a><br>
-			<h6><i>Hosted by:</i></h6>
-			<a href="https://www.pccoepune.com" target="_blank"><img src="banners\pccoe.png" alt="PCCOE Pune" href="www.pccoepune.com" style="width:50%"></a>
+			<div class="w3-xlarge">
+					Prizes:
+				</div>
+				<div class='prizeBlock hvr-underline-from-center' id='firstPrize'>
+					First Prize
+				</div>
+
+				<div class='prizeBlock hvr-underline-from-center' id='secondPrize'>
+					Second Prize
+				</div>
 		</div>
 			
 		<div class="w3-third w3-center w3-large w3-red w3-TW w3-text-white" style="height:250px">
