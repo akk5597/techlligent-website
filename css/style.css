@@ -1538,6 +1538,20 @@ body.mobile .animated {
 
 }
 
+/*******  Abmassador Link *******/
+
+#ambs {
+	color: #FFEB3B;
+	font-weight: 700;
+}
+
+#ambs:hover {
+	color: red;
+	font-weight: 800;
+}
+
+/*******  Abmassador Link *******/
+
 
 
 
