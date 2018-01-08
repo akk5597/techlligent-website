@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,inital-scale=1">
+
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://cdn.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web|Electrolize">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Julius+Sans+One">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<title>All Terrain Bot</title>	
+
+	<script>
+		$(document).ready(function(){
+			$("#firstPrize").click(function(){
+				$("#firstPrize").fadeOut(function(){
+					$("#firstPrize").text(($("#firstPrize").text() == '6000₹'?'First Prize':'6000₹')).fadeIn();
+				});
+			});
+
+			$("#secondPrize").click(function(){
+				$("#secondPrize").fadeOut(function(){
+					$("#secondPrize").text(($("#secondPrize").text() == '4000₹'?'Second Prize':'4000₹')).fadeIn();
+				});
+			});
+		});
+	</script>
+</head>
+
+<style>
+	.w3-TW {
+		font-family: 'Titillium Web',sans-serif;
+	}
+
+	.w3-tagline {
+		font-family: 'Julius Sans One',sans-serif;
+	}
+
+	.w3-heading{
+		font-family: 'Electrolize',sans-serif;
+	}
+
+	.prizeBlock{
+		margin-top: 40px;
+		font-size: 30px;
+		border: 1px green solid;
+		width:50%;
+		height:20%;
+		background-color: white;
+		color: black;
+	}
+</style>	
+
+<body class="w3-content" style="max-width:1200px;">
+	<div class="w3-row">
+		<div class="w3-third w3-container w3-section w3-center">
+			<img src='images/all-terrain-bot/all-terrain-bot.png' alt="Event Logo/Image" style="width:60%">
+		</div>
+		<div class="w3-third w3-container w3-large w3-text-black">
+			<h1 class="w3-xxxlarge w3-heading">All Terrain<br>Bot</h1>
+		</div>
+		<div class="w3-third w3-section">
+			<h1 class="w3-xxlarge w3-TW">Brought to you by:</h1>
+			<h1 class="w3-xlarge w3-TW">Department of ??????????</h1>
+		</div>
+	</div>
+
+	<div class="w3-row w3-container w3-section w3-TW">
+		<div class="w3-half w3-large">
+			<p><br><i>Description</i>:<br>
+				Create a bot that can run on both land and water. The bot also needs to overcome other obstacles in its way, such as rocky and muddy ways. Can you make the best bot there can be?
+			</p>
+
+			<h3> Contest format : </h3>
+			<ul>
+				<li>Each group consists of maximum of 4 students.</li>
+				<li>Your bot will run both on water as well as on land. The land section consists of two parts, one is the normal track which would include track along with some hurdles and the second part is an off-road part where your bot needs to go through Rocky and muddy patches.(off-road part will be included in third round)</li>
+				<li>If the bot damages the track it will be disqualified.</li>
+				<li>Maximum of three hand contacts would be allowed between two consecutive checkpoints. (If more than 3 contacts and done penalty of 1 min would be considered.)</li>
+				<li>No trial would be allowed.</li>
+				<li>Track can be completed in maximum of 20 mins.</li>
+				<li>If during the runtime, there's damage in some motor, then the corresponding team would be disqualified.</li>
+				<li>Track will be disclosed at the time of event.</li>
+				<li>Maximum dimensions for the bot are : 30x30x30 cm.</li>
+				<li>Maximum voltage for the motor : 12V</li>
+				<li>There's no restriction on the number of motor's to be used.</li>
+				<li>As this bot is not just a bot but it's an all terrain bot so your bot should work both on water as well as land.</li>
+				<li>You can use recyclable material</li> 
+			</ul>
+
+		</div>
+		<div class = "w3-half w3-large w3-TW">
+			<h3> Other details : </h3>
+			
+			<ul>
+				<li>Registration Fee: Rs 200/-</li>
+				<li>Number of Participants: Atleast 1 and atmost 4 students per team</li>
+			</ul> 
+		</div>	
+	</div>
+
+	<div class="w3-row w3-section">
+		<div class="w3-third w3-container w3-orange w3-large w3-TW w3-text-white" style="height:250px" color = "#00EEEE">
+			<h2><b>For queries:</b> </h2>
+			
+		</div>
+			
+		<div class="w3-third w3-center w3-large w3-cyan w3-text-white w3-TW" id="prizes" style="height:250px">
+			<div class="w3-xlarge">
+				Prizes:
+			</div>
+			<div class='prizeBlock hvr-underline-from-center' id='firstPrize'>
+				First Prize
+			</div>
+
+			<div class='prizeBlock hvr-underline-from-center' id='secondPrize'>
+				Second Prize
+			</div>
+		</div>
+			
+		<div class="w3-third w3-center w3-large w3-red w3-TW w3-text-white" style="height:250px">
+			<h3><b>Registrations and Payments: </b></h3>
+			<p>This part will be updated soon!</p>
+		</div>
+	</div>
+	
+</body>
+</html>
