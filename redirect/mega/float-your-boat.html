@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,inital-scale=1">
+
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://cdn.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web|Electrolize">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Julius+Sans+One">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<title>Float Your Boat</title>	
+
+	<script>
+		$(document).ready(function(){
+			$("#firstPrize").click(function(){
+				$("#firstPrize").fadeOut(function(){
+					$("#firstPrize").text(($("#firstPrize").text() == '6000₹'?'First Prize':'6000₹')).fadeIn();
+				});
+			});
+
+			$("#secondPrize").click(function(){
+				$("#secondPrize").fadeOut(function(){
+					$("#secondPrize").text(($("#secondPrize").text() == '4000₹'?'Second Prize':'4000₹')).fadeIn();
+				});
+			});
+		});
+	</script>
+</head>
+
+<style>
+	.w3-TW {
+		font-family: 'Titillium Web',sans-serif;
+	}
+
+	.w3-tagline {
+		font-family: 'Julius Sans One',sans-serif;
+	}
+
+	.w3-heading{
+		font-family: 'Electrolize',sans-serif;
+	}
+
+	.prizeBlock{
+		margin-top: 40px;
+		font-size: 30px;
+		border: 1px green solid;
+		width:50%;
+		height:20%;
+		background-color: white;
+		color: black;
+	}
+</style>	
+
+<body class="w3-content" style="max-width:1200px;">
+	<div class="w3-row">
+		<div class="w3-third w3-container w3-section w3-center">
+			<img src='images/float-your-boat.jpg' alt="Event Logo/Image" style="width:60%">
+		</div>
+		<div class="w3-third w3-container w3-large w3-text-black">
+			<h1 class="w3-xxxlarge w3-heading">Float<br>Your Boat</h1>
+		</div>
+		<div class="w3-third w3-section">
+			<h1 class="w3-xxlarge w3-TW">Brought to you by:</h1>
+			<h1 class="w3-xlarge w3-TW">Department of Lorem Ipsum</h1>
+		</div>
+	</div>
+
+	<div class="w3-row w3-container w3-section w3-TW">
+		<div class="w3-half w3-large">
+			<p><br><i>Description</i>:<br>
+				Make a boat that can float and also carry weight. The models are to be made on the spot.
+			</p>
+
+			<h3> Contest format : </h3>
+			<ul>
+				<li>
+					<h4>Round 1: On Spot Model Making</h4>
+					<br>
+					<p>Teams will have to make a boat model with propeller mechanism for the material provided. Problem statement will be given on the spot. (Participants are allowed to bring scissors)
+					</p>
+					<ul>
+						Material
+						<li>Icecream sticks</li>
+						<li>Fevicol</li>
+						<li>Cutter</li>
+						<li>Rubberband</li>
+					</ul>
+				</li>
+
+				<li>
+					<h4>Round 2: Elimination Round</h4>
+					<br>
+					<p>The model will be tested on the basis of time required to cover the given distance. Teams will be shortlisted.</p>
+				</li>
+
+				<li>
+					<h4>Round 3: Load Testing</h4>
+					<br>
+					<p>Qualified models will be tested and evaluated on the basis of ratio (self weight of the boat / weight taken by the boat)</p>
+				</li>
+			</ul>
+		</div>
+		<div class = "w3-half w3-large w3-TW">
+			<h3> Other details : </h3>
+			<h4>Judging Criteria:</h4>
+			<ul>
+				<li>On the basis of 3 rounds, marks will be given</li>
+				<li>Judges decision will be final</li>
+				<li>In case of any disputes, the coordinator reserves all rights to disqualify the participants.</li>
+			</ul> 
+		</div>	
+	</div>
+
+	<div class="w3-row w3-section">
+		<div class="w3-third w3-container w3-orange w3-large w3-TW w3-text-white" style="height:250px" color = "#00EEEE">
+			<h2><b>For queries:</b> </h2>
+			
+		</div>
+			
+		<div class="w3-third w3-center w3-large w3-cyan w3-text-white w3-TW" id="prizes" style="height:250px">
+			<div class="w3-xlarge">
+				Prizes:
+			</div>
+			<div class='prizeBlock hvr-underline-from-center' id='firstPrize'>
+				First Prize
+			</div>
+
+			<div class='prizeBlock hvr-underline-from-center' id='secondPrize'>
+				Second Prize
+			</div>
+		</div>
+			
+		<div class="w3-third w3-center w3-large w3-red w3-TW w3-text-white" style="height:250px">
+			<h3><b>Registrations and Payments: </b></h3>
+			<p>This part will be updated soon!</p>
+		</div>
+	</div>
+	
+</body>
+</html>
