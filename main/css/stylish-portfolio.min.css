@@ -25,7 +25,7 @@
 
  		.portfolio-item:hover img{-webkit-clip-path:inset(2rem);clip-path:inset(2rem)}
 
- 		.portfolio-item:hover .caption{background-color:rgba(29,128,159,.9);-webkit-clip-path:inset(2rem);clip-path:inset(2rem)}}
+ 		.portfolio-item:hover .caption{background-color:rgba(33, 33, 33, .8);-webkit-clip-path:inset(2rem);clip-path:inset(2rem)}}
 
 
  		footer.footer{padding-top:5rem;padding-bottom:5rem}
@@ -36,7 +36,8 @@
 
  		a{color:#1d809f}
 
- 		a:active,a:focus,a:hover{color:#155d74}.btn-primary{background-color:#1d809f!important;border-color:#1d809f!important;color:#fff!important}.btn-primary:active,.btn-primary:focus,.btn-primary:hover{background-color:#155d74!important;border-color:#155d74!important}.btn-secondary{background-color:#ecb807!important;border-color:#ecb807!important;color:#fff!important}.btn-secondary:active,.btn-secondary:focus,.btn-secondary:hover{background-color:#ba9106!important;border-color:#ba9106!important}.btn-dark{color:#fff!important}.btn{box-shadow:0 3px 3px 0 rgba(0,0,0,.1);font-weight:700}.bg-primary{background-color:#1d809f!important}.text-primary{color:#1d809f!important}.text-secondary{color:#ecb807!important}
+ 		a:active,a:focus,a:hover{color:#155d74}
+ 		.btn-primary{background-color:#1d809f!important;border-color:#1d809f!important;color:#fff!important}.btn-primary:active,.btn-primary:focus,.btn-primary:hover{background-color:#155d74!important;border-color:#155d74!important}.btn-secondary{background-color:#ecb807!important;border-color:#ecb807!important;color:#fff!important}.btn-secondary:active,.btn-secondary:focus,.btn-secondary:hover{background-color:#ba9106!important;border-color:#ba9106!important}.btn-dark{color:#fff!important}.btn{box-shadow:0 3px 3px 0 rgba(0,0,0,.1);font-weight:700}.bg-primary{background-color:#1d809f!important}.text-primary{color:#1d809f!important}.text-secondary{color:#ecb807!important}
 
 #spimg img {
 	height: 120px;
@@ -45,7 +46,7 @@
 }
 
 #contact {
-	background: #dfdfdf;
+	background: #212121;
 }
 
 li {
@@ -68,14 +69,39 @@ a.nostyle {
 }
 
 .bgcol {
-	background: #90CAF9;
+	background: #E1BEE7;
 }
 
 body {
 	background: #F3E5F5;
+	margin: 0;
+	padding: 0;
 }
 
 .blackcolor {
 	color: #000;
+}
+
+.whitecolor {
+	color: #fff;
+}
+
+#margintop {
+	padding-top: 0;
+}
+
+#logo {
+	height: 230px;
+	width: 130px;
+	padding: 0;
+}
+
+.customtopmargin {
+	margin-top: 0;
+	padding: 0;
+}
+
+#spfont {
+	font-size: 70px;
 }
 
