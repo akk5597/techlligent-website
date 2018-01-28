@@ -64,12 +64,12 @@ a.nostyle {
 }
 
 #cust {
-	width: 700px;
-	height: 325px;
+	width: 650px;
+	height: 275px;
 }
 
 .bgcol {
-	background: #E1BEE7;
+	background: #6A1B9A;
 }
 
 body {
@@ -102,6 +102,8 @@ body {
 }
 
 #spfont {
-	font-size: 70px;
+	font-size: 7vw;
+	font-family: Passion One;
+	font-weight: 35;
 }
 
